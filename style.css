@@ -22,7 +22,7 @@ img {
 
 
 h1, h2, h3 {
-    line-height: 1.1;
+    line-height: 1;
 }
 
 
@@ -43,7 +43,7 @@ body {
 /* Utility Style */
 
 .container {
-    max-width: 70rem;
+    max-width: 65rem;
     width: 90%;
     margin: 0 auto;
     padding: 4rem 0;
@@ -95,6 +95,10 @@ body {
     font-size: 0.75rem;
 }
 
+.social-proof__reviews {
+    gap: 1em;
+}
+
 .review-box {
     background: var(--neutral-clr-400);
     text-align: center;
@@ -111,6 +115,10 @@ body {
  .fas {
      font-size: 0.8rem;
     color: orange;
+}
+
+.fas + .fas {
+    margin-left: 0.3em;
 }
 
 /* Social Proof Testimonials */
@@ -165,6 +173,7 @@ body {
 
     .container {
         gap: 5em;
+      
     }
 
     .social-proof {
@@ -174,8 +183,19 @@ body {
 
     .social-proof__heading,
     .social-proof__reviews {
-        width: 50%;
+        width: 48%;
         text-align: left;
+    }
+
+    .social-proof__heading p {
+        color:hsl(303, 10%, 53%);
+        font-size: 0.9rem;
+        font-weight: 500;
+    }
+
+    .social-proof__reviews {
+        /* margin-right: 5rem; */
+        /* margin-left: auto; */
     }
 
     .social-proof__heading {
@@ -183,7 +203,8 @@ body {
     }
 
     .social-proof__title {
-        max-width: 300px;
+        font-size: 2.3rem;
+        /* max-width: 00px; */
     }
 
     .review-box {
@@ -191,6 +212,7 @@ body {
         flex-direction: row;
         align-items: center;
         gap: 1.5em;
+        max-width: 350px;
     }
 
     .social-proof__testimonials {
@@ -198,10 +220,10 @@ body {
     }
 
     .review-box:nth-child(2) {
-       transform: translateX(30px);
+       transform: translateX(40px);
     }
     .review-box:nth-child(3) {
-        transform: translateX(60px);
+        transform: translateX(80px);
     }
 
     .social-proof__testimonials {
@@ -214,6 +236,16 @@ body {
 
     .testimonial-box:nth-child(3) {
         transform: translateY(40px);
+    }
+
+   
+}
+
+@media(min-width: 64em) {
+    .social-proof__heading,
+    .social-proof__reviews {
+        width: 42%;
+        text-align: left;
     }
 }
    
